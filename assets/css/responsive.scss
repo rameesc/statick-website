@@ -1,0 +1,29 @@
+
+@mixin mobileView{
+    @media  screen and (max-width:680px) {
+        @content;
+        
+    }
+
+}
+@mixin smallMobileScreen {
+    @media  screen and (max-width:600px) {
+        @content;
+        
+    }
+
+}
+@mixin smallScreenBelow-387{
+    @media  screen and (max-width:391px) {
+        @content;
+        
+    }
+
+}
+@mixin IpadScreen{
+    @media  screen and (max-width:820px) {
+        @content;
+        
+    }
+
+}

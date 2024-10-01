@@ -1,0 +1,795 @@
+@use '../css/colores.scss' as *;
+@use '../css/responsive.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    @include mobileView{
+        width: 100%;
+       }
+
+    @include smallScreenBelow-387{
+        width: 100%;
+       
+        
+    }
+  
+    margin: 0%;
+    section{
+       // width: 100%;
+       @include mobileView{
+        width: 100%
+       
+       }
+
+        .banner-video{
+            width: 100%;
+            height: 690px;
+            position: relative;
+            @include smallScreenBelow-387{
+                width: 100%;
+               
+                
+            }
+          
+           
+            video{
+                width: 100%;
+                height: 700px;
+                object-fit: cover;
+                @include smallScreenBelow-387{
+                    width: 100%;
+                    object-fit: cover;
+                    
+                }
+                
+
+            }
+            .video-title{
+                max-width: 936px;
+                height: 282px;
+                @include smallMobileScreen{
+                    left: 5%;
+                }
+                @include smallScreenBelow-387{
+                   
+                    left: 10%;
+                    
+                }
+               
+               
+                position: absolute;
+                top: 187px;
+                left: 110px;
+                h1{
+                    color:$white;
+                    max-width: 500px;
+                    font-weight: 600;
+                    font-size: 72px;
+                    line-height: 105%;
+                    
+                    @include mobileView{
+                       font-size: 50px;
+                       }
+                       @include smallScreenBelow-387{
+                        font-weight: 500;
+                   
+                        font-size: 45px;
+                        
+                    }
+                    span{
+                        font-weight: 300;
+
+                    }
+                }
+            }
+        }
+
+    }
+    .what-we{
+        margin: 50px 0px;
+
+        .what-we-do{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            h2{
+                font-weight: 300;
+                
+                text-align: center;
+                height: 66px;
+                font-size: 48px;
+                
+                color: $darkBlue;
+                @include mobileView{
+                    font-size: 40px;
+                    margin-top: 30px;
+                   
+                    }
+
+            }
+            p{
+              max-width: 700px;
+                height: 88px;
+                size: 36px;
+                font-weight: 328;
+                color: $darkBlue;
+                @include mobileView{
+                    font-size: 18px;
+                    max-width: 250px;
+                    margin-bottom: 10px;
+                    }
+
+            }
+        }
+    }
+    .img-container{
+        width: 100%;
+       
+        height: 1670px;
+        @include smallScreenBelow-387{
+            width: 100%;
+           
+            
+        }
+       
+       
+        .contents-img{
+            position: relative;
+            img{
+                width: 100%;
+                height: 1700px;
+                object-fit: cover;
+                @include mobileView{
+                    max-width: 100%;
+                    
+                     }
+
+            }
+            .top-text{
+               
+                
+                position: absolute;
+                top: 3%;
+                left: 20%;
+                @include mobileView{
+                    top: 4%;
+                    left: 6%;
+                    }
+               
+                p{
+                    color: $white;
+                    max-width: 800px;
+                    font-size: 20px;
+                    @include mobileView{
+                       max-width: 300px;
+                       font-size: 18px;
+                        }
+                }
+            }
+            .left-items{
+                display: flex;
+                position: absolute;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+                
+                height: 1700px;
+                width: 630px;
+                gap: 190px;
+                background-color: #23366fa1;
+                @include mobileView{
+                    max-width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 100px;
+                    
+                     }
+                     @include smallMobileScreen{
+                        display: flex;
+                      align-items: center;
+                      padding-left:20px ;
+                      justify-content: center;
+                        max-width: 100%;
+
+                     }
+                     @include smallScreenBelow-387{
+                        
+                       
+                        
+                    }
+                
+                top: 0px;
+                .item{
+                    display: flex;
+                    gap: 15px;
+                    @include mobileView{
+                        display: flex;
+                        width: 100%;
+                        //align-items: center;
+                        justify-content: center;
+                        
+                         }
+                         @include smallMobileScreen{
+                            padding-left: 20px;
+                         }
+                         @include smallScreenBelow-387{
+                            display: flex;
+                            margin-left: 60px;
+                          width: 100%;
+                          align-items: center;
+                          justify-content: center;
+                            
+                        }
+                   
+                    .cercle{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background-color: $yellow;
+                        z-index: 2;
+                        @include smallScreenBelow-387{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            
+                        }
+
+                    }
+                    .text-content{
+                        position: relative;
+                        width: 400px;
+                        height: 110px;
+                        color: $white;
+                        @include mobileView{
+                            margin-top: 0px;
+                            
+                             }
+                        h1{
+                           
+                            font-weight: 800;
+                             line-height: 52px;
+                            font-size: 48px;
+                            @include mobileView{
+                                max-width: 200px;
+                                font-size: 20px;
+                                line-height: 22px;
+                                
+                                 }
+                           
+                           
+                        }
+                        p{
+                            max-width: 200px;
+                            font-weight: 300;
+                            line-height: 22px;
+                            font-size: 20px;
+                            @include mobileView{
+                                margin-top: 10px;
+                                font-size: 15px;
+                                line-height: 18px;
+                                
+                                 }
+                           
+                            
+                            span{
+                                cursor: pointer;
+                                font-weight: 600;
+                                color: rgb(62, 133, 240);
+                            }
+                                
+                        }
+                        
+                        .pop-up{
+                            position: absolute;
+                            color: $darkBlue;
+                            top: 0%;
+                            left: 120%;
+                            width: 340px;
+                            padding: 15px;
+                            border-radius: 10px;
+                            background-color: rgb(213, 236, 250);
+                            @include mobileView{
+                                width: 300px;
+                                top: 0%;
+                                left: -8px;
+                                z-index: 10;
+                                
+                                 }
+                                 @include smallMobileScreen{
+                                    width: 270px;
+                                 top: 0%;
+                                 left: 0%;
+                                 z-index: 10;
+
+                                 }
+                                 @include smallScreenBelow-387{
+                                    width: 250px;
+                                    top: 0%;
+                                    left: 0px;
+                                    z-index: 10;
+                                    
+                                }
+                                @include IpadScreen{
+                                    top: 0%;
+                                    left: 0%;
+                                }
+                            .top-close{
+                                display: flex;
+                                justify-content: space-between;
+                                h1{
+                                    font-size: 25px;
+                                    line-height: 28px;
+                                    font-weight: 700;
+                                }
+                                h2{
+                                    color: $darkBlue;
+                                    font-size: 20px;
+                                    cursor: pointer;
+                                   
+                                    font-weight: 300;
+                                }
+                            }
+                            .info{
+                                margin: 10px 0px ;
+                                p{
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                }
+                            }
+                            .bottom{
+                                margin-top: 5px;
+                                letter-spacing: 1px;
+                                h3{
+                                    line-height: 22px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        .first{
+                            background-color: $skyblue;
+                            display: none;
+
+                        }
+                        .second{
+                            background-color: $lightWhite;
+                            display: none;
+
+                        }
+                        .third{
+                            display: none;
+                            background-color:rgba(245, 237, 203, 0.973);
+
+                        }
+                        .last{
+                            display: none;
+                            background-color: rgb(189, 201, 201);
+
+                        }
+                    }
+                }
+                .line{
+                    position: absolute;
+                    top: 12%;
+                    left: 17%;
+                    width: 5px;
+                    z-index: 1;
+                    height: 1200px;
+                    background-color: $white;
+                    @include mobileView{
+                        top: 23%;
+                        height: 830px;
+                        
+                        
+                         }
+                         @include smallMobileScreen{
+                            left: 15%;
+                            top: 25%;
+                         }
+                         @include smallScreenBelow-387{
+                            
+                            left: 22%;
+                            top: 25%;
+                           
+                            
+                        }
+                }
+            }
+        }
+
+
+    }
+    .what-make-{
+        width: 100%;
+        margin: 80px 0px 80px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        @include mobileView{
+            gap: 0px;
+            
+            
+             }
+        h1{
+           
+            height: 89px;
+            font-size: 48px;
+            font-weight: 500;
+            color: $darkBlue;
+            @include mobileView{
+                font-size: 40px;
+                font-weight: 400;
+                max-width: 300px;
+                
+                
+                 }
+
+        }
+        .content-img{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 50px;
+            @include smallScreenBelow-387{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+                
+            }
+            .what-make-content{
+                article{
+                   
+                    p{
+                        max-width: 700px;
+                        margin-top: 20px;
+                        font-weight: 400;
+                        color: $darkBlue;
+                        font-size: 20px;
+                        @include mobileView{
+                            font-size: 18px;
+                            max-width: 450px;
+                           
+                            
+                            
+                             }
+
+
+                    }
+                    span{
+                        font-weight: bold;
+                    }
+                }
+
+            }
+            .right-img{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                 gap: 30px;
+                img{
+                   
+                    width: 360px;
+                    height: 404px;
+                    object-fit: cover;
+                    @include smallScreenBelow-387{
+                        //object-fit: cover;
+                        width: 300px;
+                        height: 300px;
+                       
+                        
+                    }
+                    @include smallMobileScreen{
+                        width: 300px;
+                        height: 300px;
+                     }
+                }
+                .text-winner{
+                   
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: space-evenly;
+                   gap: 15px;
+                   align-items: center;
+
+                   @include  mobileView{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                   }
+                    h2{
+                        font-weight: 300;
+                        color: $darkBlue;
+                        font-size: 28px;
+                        
+                        margin: 0%;
+                        
+                        line-height: 35px;
+
+                    }
+                    h1{
+                        margin: 0%;
+                        line-height: 20px;
+                        font-weight: 600;
+                        color: $darkBlue;
+                        font-size: 24px;
+                       
+
+                    }
+                    .bold{
+                        font-weight: 600;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .person-info{
+        width: 100%;
+        margin: 100px 0px 100px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        @include smallScreenBelow-387{
+            //object-fit: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            
+           
+            
+        }
+
+        .person-title{
+            h1{
+                color: $darkBlue;
+                font-weight: 400;
+                text-align: center;
+                @include mobileView{
+                    font-size: 25px;
+                    font-weight: 500;
+                    max-width: 450px;
+                   
+                    
+                    
+                     }
+                     @include smallMobileScreen{
+                        max-width: 300px;
+                     }
+                     @include smallScreenBelow-387{
+                        //object-fit: cover;
+                        font-size: 20px;
+                        padding: 20px;
+                       
+                        
+                    }
+
+            }
+        }
+        .person{
+            width: 90%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            flex-wrap:wrap;
+            margin-top: 80px;
+            gap: 50px;
+            .item{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                @include mobileView{
+                    gap: 20px;
+                    
+                   
+                    
+                    
+                     }
+                .person-details{
+
+                    img{
+                        width: 248px;
+                        height: 248px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        @include mobileView{
+                            width: 240px;
+                        height: 240px;
+                            
+                           
+                            
+                            
+                             }
+                    }
+
+                }
+                .name-email{
+                    h1{
+                        color: $darkBlue;
+                        font-weight: 600;
+                        font-size: 48px;
+                        max-width: 200px;
+                        @include mobileView{
+                            font-size: 25px;
+                            
+                           
+                            
+                            
+                             }
+                    }
+                    h3{
+                        font-weight: 300;
+                        font-size: 20px;
+                        max-width: 200px;
+                        color: $darkBlue;
+                        margin-bottom: 20px;
+                    }
+                    span{
+                       
+                        background-color: $darkBlue;
+                        color: $white;
+                        padding: 6px;
+                      
+                       
+                        font-weight: 400;
+                        border-radius: 20px;
+                    }
+                }
+
+            }
+        }
+    }
+    section{
+        footer{
+            position: relative;
+            background-color: rgb(26, 89, 161);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+            gap: 10px;
+            margin: 50px 0px 0px 0px;
+            padding: 30px 0px 30px 0px;
+           
+
+            .left-right{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                color: $white;
+                @include mobileView{
+                    display: flex;
+                    padding-left: 50px;
+                    gap: 30px;
+                   flex-direction: column;
+                    
+                   
+                    
+                    
+                     }
+                .left{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    h3{
+                        font-weight: 300;
+
+                    }
+                    
+                }
+                .right{
+                    h3{
+                        font-weight: 300;
+
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .social-icons{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 30px;
+                    }
+                }
+            }
+            .bottom{
+                align-self: self-end;
+                @include mobileView{
+                    align-self: self-start;
+                    padding-left: 50px;
+                    margin-top: 20px;
+                    
+                   
+                    
+                    
+                     }
+                .links{
+                    margin-right: 200px;
+                    display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: 20px;
+                        @include mobileView{
+                            display: flex;
+                           
+                           
+                           flex-direction: column;
+                            
+                           
+                            
+                            
+                             }
+
+                    span{
+                        
+                      a{
+                        font-weight: 300;
+                        font-size: 15px;
+                        cursor: pointer;
+                        color: $white;
+                        text-decoration: none;
+
+                      } 
+                    }
+                }
+            }
+            .feedback{
+                position: absolute;
+                cursor: pointer;
+                left: -50px;
+                top: 50%;
+                transform: rotate(90deg);
+                display: flex;
+                flex-direction: row;
+                gap: 20;
+                padding: 5px;
+                background-color: rgb(17, 150, 121);
+                color: $white;
+                span{
+                    padding: 5px;
+                    font-weight: 600;
+                   
+                }
+
+            }
+
+        }
+
+    }
+
+}
